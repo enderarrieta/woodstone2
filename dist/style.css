@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    /* max-width: 1100px; */
+    margin: auto;
+}
+
+/* Nav */
+.main-nav {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px 0;
+    font-size: 16px;
+    background-color: #262626;
+    color: #fff;
+}
+
+.main-nav .logo {
+    width: 110px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #966F33;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Showcase */
+/* .showcase {
+    position: relative;
+    width: 100%;
+    height:  100vh;
+    background: url('./img/backgroundProv2.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} */
+
+.bg {
+    position: relative;
+    background-image: url('./img/backgroundProv2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 93vh;
+    color: rgba(255, 255, 255, 0.685);  
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; */
+}
+
+.showcase {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    top: 40%;
+    /* padding: 150px 200px 200px 200px; */
+}
+
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 93vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* box-shadow: inset 120px 100px 250px #000000; */
+ }
+
+ .moreinfo {
+     position: relative;
+     /* padding: 40px; */
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin: auto;
+ }
+
+ .moreinfo:before{
+ content:" ";
+ display:block;
+ width:100%;
+ height: 65px;
+ background-image:url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2.png');
+ position:absolute;
+ margin-top:-60px;
+ /* left:-500px; */
+   z-index:1;
+}
+
+ .moreinfo:after{
+    content:" ";
+    display:block;
+    height: 65px;
+    background-image:url('/img/torn-border2updown.png');
+    position:absolute;
+    bottom:-57px;
+    width:100%;
+    margin-bottom: -20px;
+    z-index:1;
+}
+
+ .moreinfo h2 {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    color: #966F33;
+ }
+
+ .moreinfo p {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* height: 40px; */
+ }
+ 
+ .contact {
+     margin-top: 40px;
+     background-image: url('/img/14-Wood-Floors.jpg');
+ }
+
+ .contact-container {
+     width: 80%;
+     background-color: #fff;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+ }
+
+ .form-group input, textarea{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    width: 90%;
+    background: transparent;
+    margin: 20px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    height: 45px;
+ }
+
+ .contact-form {
+     margin: 60px;    
+    padding: 20px;
+    background: rgba(241, 241, 241, 0.966);
+    box-shadow: 0px 4px 4px rgba(129, 129, 129, 0.856) 
+ }
+
+ .contact-form h3 {
+    text-align: center;
+    padding: 10px;
+ }
+
+ .submit {
+     background: #af874b;
+     border-color: transparent;
+     color: #fff;
+     font-size: 16px;
+     font-weight: bold;
+     /* letter-spacing: 2px; */
+     height: 50px;
+     margin: 20px;
+     width: 90%;
+ }
+
+.submit:hover {
+    background-color: #c0914b;
+    cursor: pointer;
+}
+
+.right-column {
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.phone {
+    background-color: #af874b;
+    color: #fff;
+    margin: 0px 55px 20px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(129, 129, 129, 0.856) 
+}
+
+ /* Set the size of the div element that contains the map */
+ #map {
+    height: 300px;
+    /* The height is 400 pixels */
+    width: 90%;
+    /* The width is the width of the web page */
+  }
+
+  footer {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px 0;
+    font-size: 16px;
+    background-color: #262626;
+    color: #fff;
+    padding: 30px 120px 30px 120px;
+  }
+
+  footer h5 {
+      padding: 0px 0px 10px 0px;
+  }
+
+  footer a:hover {
+      color: #c0914b;
+  }
+
+  @media (max-width: 600px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .right-column {
+        margin-top: 60px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+  }
