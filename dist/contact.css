@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    /* max-width: 1100px; */
+    margin: auto;
+}
+
+/* Nav */
+.main-nav {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px 0;
+    font-size: 16px;
+    background-color: #262626;
+    color: #fff;
+}
+
+.main-nav .logo {
+    width: 110px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #966F33;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.workbench {
+    background: url('./img/workbench3.jpg') center/cover no-repeat;
+    padding: 155px 0 116px;
+    box-shadow: inset 220px 200px 250px #0000008e, inset -220px -200px 250px #00000080;
+}
+
+.paper {
+    display: flex;
+    align-items: stretch;
+    padding: 70px 35px;
+    margin: 0 auto;
+    width: 1080px;
+    height: 490px;
+    background: url('./img/paper.png') center/cover no-repeat;
+}
+
+.left-column {
+width: 484px;
+}
+
+.form-group input, textarea{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    width: 90%;
+    background: transparent;
+    margin: 20px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    height: 25px;
+ }
+
+ #map {
+    height: 300px;
+    /* The height is 400 pixels */
+    width: 450px;
+    /* The width is the width of the web page */
+  }
+
+ .contact-form h3 {
+    text-align: center;
+    padding: 10px;
+ }
+
+ .submit {
+     background: #af874b;
+     border-color: transparent;
+     color: #fff;
+     font-size: 14px;
+     font-weight: bold;
+     /* letter-spacing: 2px; */
+     height: 40px;
+     margin: 20px;
+     width: 90%;
+ }
+
+.submit:hover {
+    background-color: #c0914b;
+    cursor: pointer;
+}
+
+.right-column {
+    position: relative;
+    padding-left: 60px;
+    width: 426px;
+    color: #4e4d4b;
+    background: url('/img/verticalBar.png') top left/10px 350px no-repeat;
+}
+
+    /* width: 80%;
+    margin: auto;
+    background-color: #fff;
+} */
+
+footer {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px 0;
+    font-size: 16px;
+    background-color: #262626;
+    color: #fff;
+    padding: 30px 120px 30px 120px;
+  }
+
+  footer h5 {
+      padding: 0px 0px 10px 0px;
+  }
+
+  footer a:hover {
+      color: #c0914b;
+  }
+
+  @media(max-width: 1100px) {
+    .paper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding: 70px 0px;
+        margin: 0 auto;
+        width: 430px;
+        height: 845px;
+    }
+
+    .contact-form {
+        margin: auto;
+        padding-left: 60px;
+
+    }
+
+    .left-column {
+        width: 284px;
+    
+        }
+
+        .right-column {
+            position: relative;
+            padding-left: 60px;
+            width: 226px;
+            color: #4e4d4b;
+            background: url('/img/verticalBar.png') top left/10px 350px no-repeat;
+        }
+
+    #map {
+        height: 300px;
+        /* The height is 400 pixels */
+        width: 200px;
+        /* The width is the width of the web page */
+      }
+
+      footer {
+        height: 150px;
+        padding: 20px;
+    }
+
+    .footer-right {
+        padding-top: 30px;
+    }
+  }
+
+  @media(max-width: 1100px) {
+    .paper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding: 70px 0px;
+        margin: 0 auto;
+        width: 630px;
+        height: 845px;
+    }
+
+    .contact-form {
+        margin: auto;
+        padding-left: 100px;
+
+    }
+
+    .left-column {
+        width: 484px;
+    
+        }
+
+        .right-column {
+            position: relative;
+            padding-left: 150px;
+            width: 326px;
+            color: #4e4d4b;
+            background: url('/img/verticalBar.png') top left/10px 350px no-repeat;
+        }
+
+    #map {
+        height: 300px;
+        /* The height is 400 pixels */
+        width: 300px;
+        /* The width is the width of the web page */
+      }
+
+      footer {
+        height: 150px;
+        padding: 20px;
+    }
+
+    .footer-right {
+        padding-top: 30px;
+    }
+  }
+
+  @media(max-width: 700px) {
+    .paper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding: 70px 0px;
+        margin: 0 auto;
+        width: 430px;
+        height: 845px;
+    }
+
+    .contact-form {
+        margin: auto;
+        padding-left: 60px;
+
+    }
+
+    .left-column {
+        width: 284px;
+    
+        }
+
+        .right-column {
+            position: relative;
+            padding-left: 60px;
+            width: 226px;
+            color: #4e4d4b;
+            background: url('/img/verticalBar.png') top left/10px 350px no-repeat;
+        }
+
+    #map {
+        height: 300px;
+        /* The height is 400 pixels */
+        width: 200px;
+        /* The width is the width of the web page */
+      }
+
+      footer {
+        height: 150px;
+        padding: 20px;
+    }
+
+    .footer-right {
+        padding-top: 30px;
+    }
+  }

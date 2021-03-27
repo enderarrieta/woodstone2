@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/74fc92391d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMX9zn28-8d71SWO-IvPgpsanJFiRp_Aw&callback=initMap&libraries=&v=weekly"
+        defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class='main-nav'>
+            <a href="index.html"><img src="./img/qt=q_95.webp" alt="WoodStone" class="logo"></a>
+
+            <ul class="main-menu">
+                <li class="hide-on-small">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href='gallery.html'>Gallery</a>
+                </li>
+                <li>
+                    <a href='services.html'>Services</a>
+                </li>
+                <li>
+                    <a href='contact.html'>Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="workbench">
+            <div class="paper">
+                <div class="left-column">
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/xknpvpzj" method="POST" id="my-form">
+                            <h3>Contact Us</h3>
+                            <div class="form-group top-form">
+                                <!-- <label for="firstName"> First Name</label> -->
+                                <input type="text" id="name" name="name" placeholder="Name">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="lastName">Last Name</label> -->
+                                <input type="text" id="phone" name="phone" placeholder="Phone">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="email">Email</label> -->
+                                <input type="email" id="email" name="email" placeholder="Email">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="message">Message</label> -->
+                                <textarea name="message" id="message" cols="30" rows="10"
+                                    placeholder="Message"></textarea>
+                            </div>
+
+                            <button type="submit" class="form-group submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <h4>Our place</h4>
+                    <div class="map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Container-->
+    <footer>
+        <div class="footer-left">
+            <p>Copyright © 2020 Wood Stone and Steel Solutions LLC - All Rights Reserved.
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <h5>Follow Us!</h5>
+            <a href="https://www.facebook.com/woodstoneandsteelsolutions/"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/woodstonesolutions/"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+
+    </footer>
+</body>
+<script src="contact.js"></script>
+
+</html>
