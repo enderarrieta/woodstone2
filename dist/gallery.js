@@ -25,3 +25,15 @@ for (var i = 0; i < thumbnails.length; i++) {
         document.querySelector('.foreground-img').style.backgroundImage = `url("${this.id}1.jpg")`
     })
 }
+
+let buttonRight = document.getElementById('slideRight');
+let buttonLeft = document.getElementById('slideLeft');
+
+buttonLeft.addEventListener('click', function () {
+    document.getElementById('slide').scrollLeft -= 100;
+    console.log("object")
+})
+
+buttonRight.addEventListener('click', function () {
+    document.getElementById('slide').scrollLeft += 100
+})
