@@ -255,28 +255,120 @@ ul {
 
   
   @media(max-width: 800px) {
-
+    
     .container {
       width: 100%;
-   
+      height: 100%;
+    }
+
+    .container .foreground-img {
+      background-image: url("./img/House1.jpg");
+      width: 50%;
+    }
+
+    .container .img {
+      background-size: 400px 100%;
     }
 
     .bigContainer {
       width: 100%;
       box-sizing: border-box;
       padding-bottom: 600px;
-      height: 770px;
+      height: 850px;
     }
+
+    .container .slider::-webkit-slider-thumb {
+      height: 160px;
+    }
+    .container .slider::-moz-range-thumb {
+      width: 6px;
+      height: 160px;
+    }
+
+    #slide-wrapper{
+      padding-top: 0px;
+      position: absolute;  
+      width: 400px;   
+      min-height: 100px;
+      align-items: center;
+      left: 1%;
+    }
+    
+    #slide{
+      width: 385px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+    }
+
+    .thumbnail{
+      box-sizing: border-box;
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: cover;
+      cursor: pointer;
+      margin: 0px;
+      width: 200px;
+      height: 200px;
+      opacity: 1;
+      border: 1px solid rgb(97, 85, 58);
+    
+    }
+    
+    .arrow{
+     display: none;
+    }
+    
 
     footer {
       display: grid;
       grid-template-columns: 2fr 1fr;
       font-size: 14px;
+      padding: 20px 50px 20px 50px;
       padding-top: 20px;
+      height: 100px;
     }
+
+    footer p {
+      margin: 0;
+      font-size: 12px;
+      }
+  
+  
+    footer h5 {
+        padding: 0px 0px 10px 0px;
+        box-sizing: border-box;  
+        margin: 0;
+    }
+  
+
+    
 
     .footer-right {
       padding-left: 30px;
     }
   }
   
+  @media(max-width: 320px) {
+    .bigContainer {
+      padding-bottom: 500px;
+      height: 750px;
+    }
+
+    .container .img {
+      background-size: 320px 100%;
+    }
+
+    #slide-wrapper{ 
+      width: 320px;   
+    }
+    
+    #slide{
+      width: 315px;
+    }
+
+    .thumbnail{
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
