@@ -21,8 +21,8 @@ for (var i = 0; i < thumbnails.length; i++) {
 
 
         this.classList.add('active')
-        document.querySelector('.background-img').style.backgroundImage = `url("/dist/${this.id}.jpg")`
-        document.querySelector('.foreground-img').style.backgroundImage = `url("/dist/${this.id}1.jpg")`
+        document.querySelector('.background-img').style.backgroundImage = `url("${this.id}.jpg")`
+        document.querySelector('.foreground-img').style.backgroundImage = `url("${this.id}1.jpg")`
     })
 }
 
