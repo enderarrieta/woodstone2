@@ -447,11 +447,13 @@ footer {
     }
 
     .map {
+        height: 100%;
         margin: 0px 0px 0px 0px;
         width: 100%;
     }
     
     #map {
+        box-shadow: none;
         margin: 0px 0px 0px 0px;
         height: 100%;
         /* The height is 400 pixels */
