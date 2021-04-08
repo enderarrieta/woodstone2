@@ -181,25 +181,29 @@ ul {
 }
 
 .slide:first-child {
-    background: url('./img/bg1.jpg') no-repeat center center/cover
+    background: url('./img/bg1.jpg') no-repeat center fixed;
+    background-size: cover;
 }
 .slide:nth-child(2) {
-    background: url('./img/bg2.jpg') no-repeat center center/cover
+    background: url('./img/bg2.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 .slide:nth-child(3) {
-    background: url('./img/bg3.jpg') no-repeat center center/cover
+    background: url('./img/bg3.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 .slide:nth-child(4) {
-    background: url('./img/bg4.jpg') no-repeat center center/cover
+    background: url('./img/bg4.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 .slide:nth-child(5) {
-    background: url('./img/bg5.jpg') no-repeat center center/cover
+    background: url('./img/bg5.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 .slide:nth-child(6) {
-    background: url('./img/bg6.jpg') no-repeat center center/cover
+    background: url('./img/bg6.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
-
-
 
  .moreinfo {
      position: relative;
@@ -257,6 +261,7 @@ ul {
  .contact {
      margin-top: 40px;
      background-image: url('./img/14-Wood-Floors.jpg');
+     /* padding-bottom: 40px; */
  }
 
  .contact-container {
@@ -287,8 +292,10 @@ ul {
  }
 
  .contact-form h3 {
+     color: #af874b;
     text-align: center;
     padding: 10px;
+    padding-top: 40px;
  }
 
  .submit {
@@ -306,6 +313,43 @@ ul {
 .submit:hover {
     background-color: #c0914b;
     cursor: pointer;
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 3s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: #fff;
+    animation: status 3s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .right-column {
@@ -331,6 +375,7 @@ ul {
     /* The height is 400 pixels */
     width: 90%;
     /* The width is the width of the web page */
+    box-shadow: 0px 4px 4px rgba(129, 129, 129, 0.856) 
   }
 
   footer {
@@ -408,30 +453,33 @@ ul {
     .main-nav .logo {
         width: 80px;
     }
-    
 
     .contact-container {
         grid-template-columns: 1fr;
+        width: 100%;
+             /* background-image: url('./img/14-Wood-Floors.jpg'); */
     }
 
     .contact-form {
-        margin: 20px 20px 10px 20px;
+        margin: 0px;
+        margin-top: 10px;
+        width: 100%;
     }
 
     .right-column {
-        margin-top: 40px;
+        margin-top: 0px;
         margin-right: 0;
         margin-left: 0;
         justify-content: center;
         text-align: center;
         align-items: center;
         display: grid;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
 
     #map {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     footer {
@@ -467,23 +515,18 @@ ul {
         width:100%;
     }
 
-    .contact-form {
-        margin: 100px 30px 40px 30px;    
-       padding: 20px;
-       background: rgba(241, 241, 241, 0.966);
-       box-shadow: 0px 4px 4px rgba(129, 129, 129, 0.856) 
-    }
-
     .form-group input, textarea{
         margin-left: 10px;
     }
 
     .phone {
-        margin: 0px 55px 50px 0px;
+        margin: 0px;
+        width: 100%;
         text-align: center;
         justify-content: center;
         align-items: center;
         padding: 10px;
+        background-color: #262626;
     }
 
     .phone h2 {

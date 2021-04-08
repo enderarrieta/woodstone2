@@ -22,12 +22,14 @@ function showMore() {
     var more1 = document.getElementById("more1")
     var BathroomButton = document.getElementById("BathroomButton")
 
-    if (more1.style.display === "none") {
-        more1.style.display = "block"
-        BathroomButton.innerHTML = "Read less"
-    } else {
+    if (more1.style.display == "block") {
         more1.style.display = "none"
         BathroomButton.innerHTML = "Read More"
+        BathroomButton.style.top = "40%"
+    } else {
+        more1.style.display = "block"
+        BathroomButton.innerHTML = "Read less"
+        BathroomButton.style.top = "60%"
     }
 }
 
@@ -35,11 +37,14 @@ function showMore2() {
     var more2 = document.getElementById("more2")
     var KitchenButton = document.getElementById("KitchenButton")
 
-    if (more2.style.display === "none") {
-        more2.style.display = "block"
-        KitchenButton.innerHTML = "Read less"
-    } else {
+    if (more2.style.display == "block") {
         more2.style.display = "none"
         KitchenButton.innerHTML = "Read More"
+        KitchenButton.style.top = "40%"
+    } else {
+        more2.style.display = "block"
+        KitchenButton.innerHTML = "Read less"
+        KitchenButton.style.top = "60%"
+
     }
 }
