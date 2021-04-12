@@ -93,17 +93,12 @@ ul {
 .showcase {
     position: relative;
     margin: auto;
-    display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     top: 40%;
-    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-display: flex;
     /* padding: 150px 200px 200px 200px; */
 }
 
@@ -189,8 +184,7 @@ display: flex;
     background-size: cover;
 }
 .slide:nth-child(2) {
-    background: url('./img/bg2.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: url('./img/bg2.jpg') no-repeat center center/cover
 }
 .slide:nth-child(3) {
     background: url('./img/bg3.jpg') no-repeat center center fixed;
