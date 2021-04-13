@@ -193,13 +193,13 @@ ul {
 .slide:nth-child(4) {
     background: url('./img/bg4.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 .slide:nth-child(5) {
     background: url('./img/bg5.jpg');
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    position: fixed;
 }
 .slide:nth-child(6) {
     background: url('./img/bg6.jpg');
