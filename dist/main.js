@@ -5,6 +5,10 @@ const auto = true;
 const intervalTime = 5000;
 let slideInterval;
 
+if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+    document.getElementsByClassName("slide")[0].className += " safari";
+}
+
 const nextSlide = () => {
     // get current class
     const current = document.querySelector('.current');

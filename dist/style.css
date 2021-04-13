@@ -396,31 +396,26 @@ ul {
       color: #c0914b;
   }
   
-
-  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
-{ @media {
-    .slide:first-child {
-        background: url('./img/bg1.jpg') no-repeat center center/cover
-    }
-    .slide:nth-child(2) {
-        background: url('./img/bg2.jpg') no-repeat center center/cover
-    }
-    .slide:nth-child(3) {
-        background: url('./img/bg3.jpg') no-repeat center center/cover;
-    }
-    .slide:nth-child(4) {
-        background: url('./img/bg4.jpg') no-repeat center center/cover
-    }
-    .slide:nth-child(5) {
-        background: url('./img/bg5.jpg') no-repeat center center/cover
-    }
-    .slide:nth-child(6) {
-        background: url('./img/bg6.jpg') no-repeat center center/cover
-    }
-}}
+  .safari:first-child {
+    background: url('./img/bg1.jpg') no-repeat center center/cover
+}
+.safari:nth-child(2) {
+    background: url('./img/bg2.jpg') no-repeat center center/cover
+}
+.safari:nth-child(3) {
+    background: url('./img/bg3.jpg') no-repeat center center/cover;
+}
+.safari:nth-child(4) {
+    background: url('./img/bg4.jpg') no-repeat center center/cover
+}
+.safari:nth-child(5) {
+    background: url('./img/bg5.jpg') no-repeat center center/cover
+}
+.safari:nth-child(6) {
+    background: url('./img/bg6.jpg') no-repeat center center/cover
+}
 
   @media (max-width: 1100px) {
-
 
     .contact-container {
         grid-template-columns: 1fr;
