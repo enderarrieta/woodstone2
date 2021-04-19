@@ -264,6 +264,14 @@ footer a:hover {
     color: #fff;
 }
 
+.main-nav li {
+font-size: 12px;
+}
+
+.main-nav ul li {
+  padding: 6px;
+}
+
 .main-nav .logo {
     width: 80px;
 }
@@ -271,6 +279,8 @@ footer a:hover {
   .main-nav {
     width: 100vw;
   }
+
+
 
   .container2 {
     background-image: none;
@@ -283,10 +293,11 @@ footer a:hover {
     grid-template-rows: 1fr 3fr;
     background-color: rgb(255, 255, 255);
     margin-bottom: 2px;
+    overflow: hidden;
   }
 
   .container {
-    width: 99vw;
+    width: 100vw;
     height: 55vh;
   }
 
@@ -310,6 +321,16 @@ footer a:hover {
       grid-template-columns: 3fr 1fr; 
       padding: 30px 30px 30px 30px;
       width: 100vw;
+      height: 150px;
+      padding: 20px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    .footer-right {
+      margin-left: 10px;
     }
 }
 
