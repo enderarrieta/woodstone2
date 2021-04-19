@@ -206,6 +206,86 @@ body {
     /* The width is the width of the web page */
   }
 
+  
+  @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+  .mail {
+    display: block;
+    margin: 80px 60px 30px 0px;
+    width: 100%;
+    max-width: 480px;
+    min-width: 320px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #F6F6F2;
+  }
+  .mail:after,
+  .mail:before {
+    content: '';
+    width: 100%;
+    height: 10px;
+    display: block;
+    background-image: repeating-linear-gradient(135deg, #c49f67 0px, #c09a62 15px, transparent 15px, transparent 25px, #989c9e 25px, #a1a1a1 40px, transparent 40px, transparent 50px);
+  }
+  
+  .mail h4 {
+    margin: 0;
+    text-align: left;
+  }
+   
+  .mail p {
+    border-top: 1px solid #a58c66;
+    border-bottom: 1px solid #a58c66;
+    margin-bottom: 40px;
+    padding: 40px;
+    color: #a58c66;
+  }
+
+  .mail h4:first-child {
+    margin: 30px 30px 15px;
+    color: #a58c66;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .mail #stamp:before {
+    content: '>>>>>';
+    width: auto;
+    height: auto;
+    display: block;
+    border: 2px solid rgba(242, 155, 145, 0.5);
+    padding: 4px;
+    position: absolute;
+    top: 36px;
+    right: -30px;
+    color: rgba(242, 155, 145, 0.5);
+    font-size: 28px;
+    transform: rotate(17deg);
+    font-weight: 400;
+    text-decoration: underline;
+    border-radius: 10px;
+  }
+  .mail #stamp:after {
+    content: '&';
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: 4px double rgba(242, 155, 145, 0.5);
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+    right: -10px;
+    color: rgba(242, 155, 145, 0.5);
+    font-size: 50px;
+    transform: rotate(-30deg);
+    font-weight: 400;
+    border-radius: 99px;
+    text-align: center;
+    line-height: 50px;
+  }
+
 footer {
     display: flex;  
     align-items: center;
@@ -459,6 +539,17 @@ footer {
         /* The height is 400 pixels */
         width: 100%;
 
+      }
+
+      .mail {
+          margin: 0px;
+          height: 100%;
+          width: 100%;
+          max-width: 1080px;
+      }
+
+      .mail p {
+          padding: 69px;
       }
 
     #main-footer {

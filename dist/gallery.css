@@ -96,10 +96,10 @@ body {
   background-size: 900px 100%;
 }
 .container .background-img {
-  background-image: url("./img/house.jpg");
+  background-image: url("./img/sink.png");
 }
 .container .foreground-img {
-  background-image: url("./img/house1.jpg");
+  background-image: url("./img/sink1.png");
   width: 50%;
 }
 .container .slider {
@@ -117,7 +117,7 @@ body {
   align-items: center;
 }
 .container .slider:hover {
-  background: rgba(242, 242, 242, 0.1);
+  background: rgba(242, 242, 242, 0.068);
 }
 .container .slider::-webkit-slider-thumb {
   position: relative;
@@ -279,7 +279,7 @@ footer a:hover {
   
   .bigContainer {
     width: 100vw;
-    height: 135vh;
+    height: 145vh;
     grid-template-rows: 1fr 3fr;
     background-color: rgb(255, 255, 255);
     margin-bottom: 2px;
@@ -287,11 +287,11 @@ footer a:hover {
 
   .container {
     width: 99vw;
-    height: 42vh;
+    height: 55vh;
   }
 
   .container .slider::-webkit-slider-thumb {
-    height: 42vh;
+    height: 55vh;
   }
 
 

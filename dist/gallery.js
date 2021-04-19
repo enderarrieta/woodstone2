@@ -4,7 +4,14 @@ $("#slider").on("input change", (e) => {
     $('.foreground-img').css('width', `${sliderPos}%`)
     // Update the position of the slider button
     $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+    // if (sliderPos > 80) {
+    //     bottomright.innerText = "Before"
+    // } else {
+    //     bottomright.innerText = "After"
+    // }
 });
+
+// let bottomright = document.getElementById('bottomright')
 
 let thumbnails = document.getElementsByClassName('thumbnail')
 

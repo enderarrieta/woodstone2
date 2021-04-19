@@ -8,9 +8,6 @@
     <title>Wood Stone and Steel Solutions </title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/74fc92391d.js" crossorigin="anonymous"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMX9zn28-8d71SWO-IvPgpsanJFiRp_Aw&callback=initMap&libraries=&v=weekly"
-        defer></script>
 </head>
 
 <body>
@@ -38,44 +35,31 @@
         <div class="slider">
             <div class="slide current" id="flag">
                 <div class="content">
-                    <h1>Slide One</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde quas atque dignissimos iste
-                        quam!</p>
+                    <h1>Welcome to Wood Stone & Steel Solutions</h1>
                 </div>
             </div>
             <div class="slide">
                 <div class="content">
-                    <h1>Slide Two</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde quas atque dignissimos iste
-                        quam!</p>
+                    <h1>Find your own style</h1>
+                    <p>We have plenty of cabinetry options so you can make the choice that suits you best</p>
                 </div>
             </div>
             <div class="slide">
                 <div class="content">
-                    <h1>Slide Three</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde quas atque dignissimos iste
-                        quam!</p>
+                    <h1>Bathroom Remodeling</h1>
+                    <p>Add value and find your own definition of peace with our service of bathroom remodeling</p>
                 </div>
             </div>
             <div class="slide">
                 <div class="content">
-                    <h1>Slide Four</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde quas atque dignissimos iste
-                        quam!</p>
+                    <h1>Kitchen Remodeling</h1>
+                    <p>The kitchen of your dreams may be a few clicks away!</p>
                 </div>
             </div>
             <div class="slide">
                 <div class="content">
-                    <h1>Slide Five</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde quas atque dignissimos iste
-                        quam!</p>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="content">
-                    <h1>Slide Six</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde quas atque dignissimos iste
-                        quam!</p>
+                    <h1>Contact us for a free quote</h1>
+                    <p>Feel free to talk to us for a totally free quote!</p>
                 </div>
             </div>
 
@@ -112,7 +96,7 @@
             <div class="contact">
                 <div class="contact-container">
                     <div class="contact-form">
-                        <form action="https://formspree.io/f/xknpvpzj" method="POST" id="my-form">
+                        <form action="https://formspree.io/f/xyylzpzp" method="POST" id="my-form">
                             <h3>Contact Us</h3>
                             <div class="form-group top-form">
                                 <!-- <label for="firstName"> First Name</label> -->
@@ -140,13 +124,22 @@
                         <div id="status"></div>
                     </div>
                     <div class="right-column">
-                        <div class="phone">
-                            <i class="fas fa-phone fa-2x"></i>
-                            <h2>Call Us!</h2>
-                            <h3>(954) 326-3874</h3>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <i class="fas fa-phone fa-2x"></i>
+                                <h3>Phone number</h3>
+                                <hr />
+                                <p>(954) 326-3874</p>
+                            </div>
                         </div>
                         <div class="map">
-                            <div id="map"></div>
+                            <section class="mail">
+                                <form action="#" method="post" accept-charset="utf-8" id="stamp">
+                                    <h4>Our Adress</h4>
+
+                                    <p> <i class="fas fa-map-marker-alt"></i> Windermere, FL 34786</p>
+                                </form>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -170,23 +163,6 @@
 
     </footer>
 </body>
-<script>
-    // Initialize and add the map
-    function initMap() {
-        // The location of Uluru
-        const uluru = { lat: 28.495560, lng: -81.534798 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-        });
-    }
-</script>
 <script src="main.js"></script>
 
 </html>
