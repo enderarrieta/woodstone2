@@ -18,6 +18,17 @@ right.addEventListener('mouseleave', () => {
     container.classList.remove('hover-right')
 });
 
+left.addEventListener('click', () => {
+    container.classList.remove('hover-right')
+    container.classList.add('hover-left')
+});
+
+
+right.addEventListener('click', () => {
+    container.classList.remove('hover-left')
+    container.classList.add('hover-right')
+});
+
 function showMore() {
     var more1 = document.getElementById("more1")
     var BathroomButton = document.getElementById("BathroomButton")
