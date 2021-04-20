@@ -345,14 +345,37 @@ footer {
 }
 
 footer {
-    font-size: 16px;
     display: grid;
     grid-template-columns: 3fr 1fr; 
     padding: 30px 30px 30px 30px;
     width: 100vw;
+    height: 150px;
+    padding: 20px;
   }
 
   footer p {
-      font-size: 16px;
+    font-size: 14px;
+  }
+
+  .footer-right {
+    margin-left: 10px;
   }
 }
+
+@media(max-width: 320px) {
+    .main-nav li {
+      font-size: 12px;
+      }
+      
+      .main-nav ul li {
+        padding: 4px;
+      }
+      
+      .main-nav .logo {
+          width: 80px;
+      }
+  
+      .main-nav ul.main-menu {
+        margin-left: 10px;
+      }
+  }
