@@ -449,6 +449,14 @@ footer {
         color: #fff;
     }
     
+    .main-nav li {
+    font-size: 12px;
+    }
+    
+    .main-nav ul li {
+      padding: 6px;
+    }
+    
     .main-nav .logo {
         width: 80px;
     }
