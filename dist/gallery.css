@@ -266,7 +266,6 @@ footer a:hover {
 
 .main-nav li {
 font-size: 12px;
-display: none;
 }
 
 .main-nav ul li {
@@ -331,6 +330,24 @@ display: none;
     }
 
     .footer-right {
+      margin-left: 10px;
+    }
+}
+
+@media(max-width: 320px) {
+  .main-nav li {
+    font-size: 12px;
+    }
+    
+    .main-nav ul li {
+      padding: 4px;
+    }
+    
+    .main-nav .logo {
+        width: 80px;
+    }
+
+    .main-nav ul.main-menu {
       margin-left: 10px;
     }
 }
