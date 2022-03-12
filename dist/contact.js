@@ -18,6 +18,7 @@ var form = document.getElementById("my-form");
 
 async function handleSubmit(event) {
     event.preventDefault();
+    console.log("alo")
     var status = document.getElementById("status");
     var data = new FormData(event.target);
     fetch(event.target.action, {
